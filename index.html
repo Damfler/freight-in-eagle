@@ -104,28 +104,28 @@
                 <li class="card-us">
                     <div class="justify-content-between card-us-t d-flex">
                         <h3>Грузоперевозка - Мценск</h3>
-                        <img src="img/info.png" alt="информация">
+                        <img src="img/info.png" alt="информация" title="Грузоперевозки по всему Мценску">
                     </div>
                     <p class="card-us-p">От 350 рублей</p>
                 </li>
                 <li class="card-us">
                     <div class="justify-content-between card-us-t d-flex">
                         <h3>Грузоперевозка - район</h3>
-                        <img src="img/info.png" alt="информация">
+                        <img src="img/info.png" alt="информация" title="Грузоперевозки по всему Мценскому району">
                     </div>
                     <p class="card-us-p">От 500 рублей</p>
                 </li>
                 <li class="card-us">
                     <div class="justify-content-between card-us-t d-flex">
                         <h3>Грузоперевозка - межгород</h3>
-                        <img src="img/info.png" alt="информация">
+                        <img src="img/info.png" alt="информация" title="Грузоперевозки мужду городами">
                     </div>
                     <p class="card-us-p">От 2000 рублей</p>
                 </li>
                 <li class="card-us">
                     <div class="justify-content-between card-us-t d-flex">
                         <h3>Грузчики</h3>
-                        <img src="img/info.png" alt="информация">
+                        <img src="img/info.png" alt="информация" title="Дополнительные услуги, подробнее по телефону">
                     </div>
                     <p class="card-us-p">От 500 рублей</p>
                 </li>
@@ -140,7 +140,7 @@
                 </li>
             </ul>
             <div class="d-flex justify-content-center">
-            <a href="#formus" class="btn btn-outline-primary mt-50">Оставить заявку</a>
+                <a href="#formus" class="btn btn-outline-primary mt-50">Оставить заявку</a>
             </div>
         </div>
     </div>
@@ -153,14 +153,15 @@
             связаться в социальных сетях или по телефону.</p>
         <div class="row">
             <div class="col-md-8">
-                <form action="">
+                <form method="POST" action="messege.php">
                     <div class="d-flex justify-content-between">
-                        <input type="text" placeholder="Имя" class="input-2">
-                        <input type="text" placeholder="Телефон" class="input-2">
+                        <input type="text" placeholder="Имя" class="input-2" name="name">
+                        <input type="text" placeholder="Телефон" class="input-2" name="phone">
                     </div>
-                    <input type="text" placeholder="E-mail" class="input">
-                    <textarea placeholder="Сообщение" class="input"></textarea>
-                    <button type="submit" class="btn btn-outline-seccond mt-50">Оставить заявку</button>
+                    <input type="email" placeholder="E-mail" class="input" name="email">
+                    <textarea placeholder="Сообщение" class="input" name="message"></textarea>
+                    <button type="submit" class="btn btn-outline-seccond mt-50" name="submit">Оставить
+                        заявку</button>
                 </form>
             </div>
             <div class="col-md-4">
@@ -183,12 +184,26 @@
     </div>
     <div class="elipse-b"></div>
 
+    <footer>
+        <div class="container">
+            <div class="d-flex justify-content-md-between header_logo align-items-sm-center">
+                <div class="d-flex align-items-sm-center">
+                    <img src="img/truck.svg" alt="логотип" class="logo">
+                    <h3 class="title_logo ml-10">Грузоперевозки Мценск</h3>
+                </div>
+                <p class="desc">made dima_gashuk</p>
+                <div class="number">+7 999 602-96-87</div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
     </script>
+
 </body>
 
 </html>

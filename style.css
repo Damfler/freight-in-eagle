@@ -277,7 +277,7 @@ h1 {
   padding: 0;
 }
 .card-us {
-  width: 540px;
+  width: 48%;
   height: 214px;
   border-radius: 8px;
   border: 1px solid var(--second);
@@ -389,37 +389,39 @@ html {
   font-family: "Noah Grotesque", sans-serif;
 }
 .n-card img {
-    height: 40px;
-    width: auto;
+  height: 40px;
+  width: auto;
 }
 .n-card:nth-child(1) img {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 .n-card:nth-child(2) img {
-    margin-right: 23px;
+  margin-right: 23px;
 }
 .soc {
-    margin-top: 40px;
-    padding: 0;
-    list-style: none;
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
 }
 .soc li {
-    width: 60px;
-height: 60px;
-border-radius: 8px;
-background: var(--main);
-
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  background: var(--main);
 }
 .soc li a {
-    width: 100%;
-    height: 100%;
-    display: flex;
-align-items: center;
-justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .soc li a img {
-    width: 40px;
+  width: 40px;
 }
-#formus {
-    margin-bottom: 50px;
+
+footer {
+  background: var(--main);
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
