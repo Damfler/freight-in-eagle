@@ -7,17 +7,13 @@
 
 @font-face {
   font-family: "Gilroy";
-  src: url(Gilroy-Regular.eot?) format("eot"),
-    url(Gilroy-Regular.woff) format("woff"),
-    url(Gilroy-Regular.ttf) format("truetype");
+  src: url(Gilroy-Regular.eot?) format("eot");
   font-weight: regular;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy";
-  src: url(Gilroy-Medium.eot?) format("eot"),
-    url(Gilroy-Medium.woff) format("woff"),
-    url(Gilroy-Medium.ttf) format("truetype");
+  src: url(Gilroy-Medium.eot?) format("eot");
   font-weight: medium;
   font-style: normal;
 }
