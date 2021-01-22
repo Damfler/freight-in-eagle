@@ -28,14 +28,31 @@ body {
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  /* height: 4000px; */
 }
 
 .header_main {
   width: 100%;
-  height: 1080px;
-  /* clip-path: circle(100% at 51% 0); */
+  height: 850px;
   background: var(--main);
+  /* clip-path: circle(100% at 50% 0);
+   clip-path: ellipse(50% 5% at 50% 0%); */
+  overflow: hidden;
+}
+.elipse-y {
+  width: 100%;
+  height: 100px;
+  background: var(--main);
+  clip-path: ellipse(50% 50% at 50% 0%);
+}
+.elipse-b {
+  width: 100%;
+  height: 100px;
+  background: var(--second);
+  clip-path: ellipse(50% 50% at 50% 50%);
+  position: relative;
+  top: 50px;
 }
 .header_logo {
   padding-top: 20px;
@@ -67,9 +84,286 @@ body {
 }
 
 .fixed_car {
-  position: absolute;
-  left: 817px;
-  top: 243px;
-  width: 780px;
-  height: 674px;
+  width: 690px;
+  position: relative;
+  left: -100px;
+  top: 15px;
+}
+.header_content {
+  margin-top: 100px;
+}
+.header_content h1 {
+  color: var(--second);
+  font-family: "Noah Grotesque", sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 70px;
+}
+.header_content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+}
+.header_content ul li {
+  width: 300px;
+  height: 100px;
+  background: #fff;
+  transform: skewX(-15deg);
+  border-radius: 8px;
+  margin-left: 10px;
+  box-shadow: 0 23px 57px rgba(0, 0, 0, 0.05);
+}
+.header_content ul li:nth-child(1)::before {
+  transform: skewX(10deg);
+  display: block;
+  content: "";
+  background: url(img/sobol_prev.png) no-repeat;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 2px;
+  left: -7px;
+}
+.header_content ul li:nth-child(2)::before {
+  transform: skewX(15deg);
+  display: block;
+  content: "";
+  background: url(img/1.png) no-repeat;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 13px;
+  left: -4px;
+}
+.header_content ul li p {
+  color: #201e1f;
+  font-size: 15px;
+  line-height: 22px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 500;
+  transform: skewX(15deg);
+  position: relative;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.btn-outline-primary {
+  color: var(--second);
+  font-size: 19px;
+  font-weight: 500;
+  font-family: "Gilroy", Arial, sans-serif;
+  padding: 40px 117px;
+  border-radius: 8px;
+  border: 1px solid var(--second);
+  background-color: var(--main);
+  border-radius: 8px;
+}
+.btn-outline-primary:hover {
+  border: 1px solid var(--main);
+  background-color: var(--second);
+  color: var(--main);
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.btn-outline-seccond {
+  color: var(--main);
+  font-size: 19px;
+  font-weight: 500;
+  font-family: "Gilroy", Arial, sans-serif;
+  padding: 40px 117px;
+  border-radius: 8px;
+  border: 1px solid var(--main);
+  background-color: var(--second);
+  border-radius: 8px;
+}
+.btn-outline-seccond:hover {
+  border: 1px solid var(--second);
+  background-color: var(--main);
+  color: var(--second);
+}
+
+.header_button {
+  margin-top: 50px;
+}
+.desc_but {
+  color: var(--second);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  font-family: "Gilroy", Arial, sans-serif;
+  margin-left: 30px;
+  position: relative;
+  top: 30px;
+}
+.desc_but::after {
+  content: "";
+  display: block;
+  width: 95px;
+  height: 52px;
+  background: url(img/palk.png);
+  position: relative;
+  top: 11px;
+  right: 80px;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 70px;
+  font-family: "Noah Grotesque", sans-serif;
+  color: var(--second);
+}
+.c-s {
+  color: var(--second);
+}
+.c-m {
+  color: var(--main);
+}
+
+.content-card ul {
+  margin-top: 100px;
+  list-style: none;
+}
+.content-card ul li {
+  margin-left: 16px;
+  width: 280px;
+  height: 280px;
+  border-radius: 8px;
+  background-color: var(--main);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-card ul li:nth-child(1) {
+  margin-left: 0;
+}
+.content-card ul li img {
+  margin-bottom: 30px;
+}
+.content-card ul li p {
+  font-family: "Noah Grotesque", sans-serif;
+  color: var(--second);
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 35px;
+  text-align: center;
+}
+
+.uslugi {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: var(--main);
+}
+.uslugi h1 {
+  margin-bottom: 100px;
+}
+.uslugi ul {
+  list-style: none;
+}
+.card-us {
+  width: 512px;
+  height: 214px;
+  border-radius: 8px;
+  border: 1px solid var(--second);
+  background-color: var(--main);
+  margin-bottom: 50px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-us:nth-child(n) {
+  margin-right: 15px;
+}
+.card-us:nth-child(2n) {
+  margin-left: 15px;
+}
+.card-us-2 {
+  width: 100%;
+  height: 281px;
+  border-radius: 8px;
+  border: 1px solid var(--second);
+  background-color: var(--main);
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-us-t img {
+  width: 30px;
+  height: 30px;
+}
+.card-us-t h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--second);
+  font-family: "Noah Grotesque", sans-serif;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+.card-us-p {
+  color: var(--second);
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 0;
+}
+.lh {
+  line-height: normal;
+}
+
+.form-t {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 35px;
+  font-weight: 400;
+  font-family: "Gilroy", Arial, sans-serif;
+}
+
+.input-2 {
+  width: 320px;
+  height: 100px;
+  border-radius: 8px;
+  border: 1px solid var(--main);
+  background-color: var(--second);
+  margin-right: 60px;
+  color: var(--main);
+font-family: "Gilroy", Arial, sans-serif;
+font-size: 30px;
+font-weight: 400;
+padding-left: 30px;
+}
+.input-2:nth-child(2n) {
+    margin-right: 0px;
+}
+.input {
+  width: 730px;
+  height: 100px;
+  border-radius: 8px;
+  border: 1px solid var(--main);
+  background-color: var(--second);
+  margin-top: 50px;
+  color: var(--main);
+  font-family: "Gilroy", Arial, sans-serif;
+font-size: 30px;
+font-weight: 400;
+padding-left: 30px;
+}
+textarea.input {
+ padding-top: 40px;
+ height: 300px;
+}
+.input::placeholder {
+    color: var(--main);
+    opacity: .2;
+}
+.input-2::placeholder {
+    color: var(--main);
+    opacity: .2;
 }
